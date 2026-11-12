@@ -51,6 +51,12 @@ macOS'ta yol şöyle olur: `"/Users/kullanici/izmir-mcp/build/index.js"`
 
 Sonra Claude Desktop'ı tamamen kapatıp açın (Windows'ta sistem tepsisinden, macOS'ta Cmd+Q ile).
 
+### macOS notları (Claude Desktop yeni sürüm)
+
+- Ayarlarda **Developer → Edit Config** yoksa dosyayı Terminal'den oluşturun. Önce `which node` ile Node'un tam yolunu öğrenin (örn. `/usr/local/bin/node`), sonra `"command"` alanına `"node"` yerine bu tam yolu yazın.
+- Dosya yoksa klasörü ve dosyayı şöyle oluşturabilirsiniz: `mkdir -p ~/Library/Application\ Support/Claude`, sonra `open -e` ile açıp JSON'u yapıştırın.
+- Bağlantı çalışıyorsa sunucu **Ayarlar → Customize → Connectors** altında `izmir-acik-veri` olarak görünür.
+
 ## Claude Code'a bağlama
 
 `izmir-mcp` klasörünün içinde:
