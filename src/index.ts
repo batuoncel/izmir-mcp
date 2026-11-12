@@ -7,28 +7,30 @@ const TIMEOUT_MS = 15_000;
 
 const server = new McpServer({ name: "izmir-acik-veri", version: "0.1.0" });
 
-// 1) Iskelet testi: Claude Desktop baglantisinin calistigini gosterir.
+// 1) İskelet testi: Claude Desktop bağlantısının çalıştığını gösterir.
 server.registerTool(
   "merhaba",
   {
     title: "Merhaba",
-    description: "Sunucunun calistigini test eder. Verilen isme Izmir'den selam doner.",
-    inputSchema: { isim: z.string().describe("Selamlanacak kisinin adi") },
+    description: "Sunucunun çalıştığını test eder. Verilen isme İzmir'den selam döner.",
+    inputSchema: { isim: z.string().describe("Selamlanacak kişinin adı") },
   },
   async ({ isim }) => ({
-    content: [{ type: "text", text: `Merhaba ${isim}, Izmir Acik Veri MCP sunucusu calisiyor!` }],
+    content: [{ type: "text", text: `Merhaba ${isim}, İzmir Açık Veri MCP sunucusu çalışıyor!` }],
   }),
 );
 
-// 2) Ilk gercek veri: ESHOT hattindaki otobuslerin anlik konumlari.
-// Not: API'de KoorX enlem, KoorY boylam ve ondalik ayraci virgul.
+// 2) İlk gerçek veri: ESHOT hattındaki otobüslerin anlık konumları.
+// Not: API'de KoorX enlem, KoorY boylam ve ondalık ayracı virgül.
 server.registerTool(
   "otobus_konumlari",
   {
-    title: "Hattaki otobuslerin anlik konumu",
+    title: "Hattaki otobüslerin anlık konumu",
     description:
-      "Bir ESHOT otobus hattindaki (or. 35, 202) tum otobuslerin canli konumunu (enlem/boylam) ve yonunu getirir.",
-    inputSchema: { hatNo: z.number().int().positive().describe("ESHOT hat numarasi, or. 35") },
+      "Bir ESHOT otobüs hattındaki (ör. 35, 202) tüm otobüslerin canlı konumunu (enlem/boylam) getirir. " +
+      "'yon' alanı ESHOT'un yön kodudur (0 veya 1) ve otobüsün hattın iki yönünden hangisinde gittiğini gösterir; " +
+      "hangi kodun hangi uca gittiği henüz doğrulanmadı, bu yüzden kullanıcıya yön adı söyleme, sadece aynı yönde giden otobüsleri grupla.",
+    inputSchema: { hatNo: z.number().int().positive().describe("ESHOT hat numarası, ör. 35") },
   },
   async ({ hatNo }) => {
     try {
@@ -49,8 +51,8 @@ server.registerTool(
       }));
       const ozet =
         otobusler.length === 0
-          ? `${hatNo} numarali hatta su an seferde otobus yok.`
-          : `${hatNo} numarali hatta su an ${otobusler.length} otobus var.`;
+          ? `${hatNo} numaralı hatta şu an seferde otobüs yok.`
+          : `${hatNo} numaralı hatta şu an ${otobusler.length} otobüs var.`;
       return { content: [{ type: "text", text: `${ozet}\n${JSON.stringify(otobusler, null, 2)}` }] };
     } catch (err) {
       return {
@@ -58,7 +60,7 @@ server.registerTool(
         content: [
           {
             type: "text",
-            text: `ESHOT canli konum servisine su an ulasilamiyor (${(err as Error).message}). Biraz sonra tekrar deneyin.`,
+            text: `ESHOT canlı konum servisine şu an ulaşılamıyor (${(err as Error).message}). Biraz sonra tekrar deneyin.`,
           },
         ],
       };
@@ -67,4 +69,4 @@ server.registerTool(
 );
 
 await server.connect(new StdioServerTransport());
-console.error("izmir-acik-veri MCP sunucusu stdio uzerinden calisiyor");
+console.error("izmir-acik-veri MCP sunucusu stdio üzerinden çalışıyor");

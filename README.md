@@ -27,7 +27,14 @@ npm run inspect
 
 ## Claude Desktop'a bağlama
 
-`%APPDATA%\Claude\claude_desktop_config.json` dosyasına ekleyin (yolu kendi klasörünüze göre değiştirin), sonra Claude Desktop'ı tamamen kapatıp açın:
+Ayar dosyasını açmanın en kolay yolu: Claude Desktop → **Ayarlar → Developer → Edit Config**. Elle açmak isterseniz:
+
+| Sistem | Ayar dosyası |
+|---|---|
+| Windows | `%APPDATA%\Claude\claude_desktop_config.json` |
+| macOS | `~/Library/Application Support/Claude/claude_desktop_config.json` |
+
+Dosyaya şunu ekleyin (dosyada başka ayarlar varsa sadece `mcpServers` kısmını ekleyin) ve yolu kendi klasörünüze göre değiştirin:
 
 ```json
 {
@@ -40,7 +47,24 @@ npm run inspect
 }
 ```
 
-Deneme soruları: "merhaba aracını Batu için çalıştır", "35 numaralı hatta şu an kaç otobüs var?"
+macOS'ta yol şöyle olur: `"/Users/kullanici/izmir-mcp/build/index.js"`
+
+Sonra Claude Desktop'ı tamamen kapatıp açın (Windows'ta sistem tepsisinden, macOS'ta Cmd+Q ile).
+
+## Claude Code'a bağlama
+
+`izmir-mcp` klasörünün içinde:
+
+```bash
+claude mcp add izmir-acik-veri --scope user -- node "$(pwd)/build/index.js"
+```
+
+Windows PowerShell'de `$(pwd)/build/index.js` yerine tam yolu yazın. Kontrol için Claude Code'da `/mcp` yazın.
+
+## Deneme soruları
+
+- "merhaba aracını Batu için çalıştır"
+- "35 numaralı hatta şu an kaç otobüs var?"
 
 ## API notları (1. hafta testi)
 
@@ -53,3 +77,7 @@ Deneme soruları: "merhaba aracını Batu için çalıştır", "35 numaralı hat
 
 - 2. hafta: kalan iki kaynağın testi (eczane, hava kalitesi), durak bazlı "durağa yaklaşan otobüsler"
 - Önbellek + yeniden deneme, uzak (HTTP) sürüm + API anahtarı, Docker
+
+## Lisans
+
+[MIT](LICENSE)

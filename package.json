@@ -1,7 +1,7 @@
 {
   "name": "izmir-acik-veri-mcp",
-  "version": "1.0.0",
-  "description": "Izmir acik verisini Claude a MCP ile baglayan sunucu",
+  "version": "0.1.0",
+  "description": "İzmir açık verisini MCP ile Claude'a bağlayan sunucu",
   "main": "build/index.js",
   "scripts": {
     "build": "tsc",
@@ -10,7 +10,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "type": "module",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.32.2",
@@ -19,5 +19,9 @@
   "devDependencies": {
     "@types/node": "^26.6.6",
     "typescript": "^7.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/batuoncel/izmir-mcp.git"
   }
 }
