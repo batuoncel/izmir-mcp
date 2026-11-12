@@ -29,7 +29,8 @@ server.registerTool(
     description:
       "Bir ESHOT otobüs hattındaki (ör. 35, 202) tüm otobüslerin canlı konumunu (enlem/boylam) getirir. " +
       "'yon' alanı ESHOT'un yön kodudur (0 veya 1) ve otobüsün hattın iki yönünden hangisinde gittiğini gösterir; " +
-      "hangi kodun hangi uca gittiği henüz doğrulanmadı, bu yüzden kullanıcıya yön adı söyleme, sadece aynı yönde giden otobüsleri grupla.",
+      "hangi kodun hangi uca gittiği henüz doğrulanmadı, bu yüzden kullanıcıya yön adı söyleme, sadece aynı yönde giden otobüsleri grupla. " +
+      "Aynı otobusId birden fazla konum kaydında görünebilir; otobüs sayısı olarak benzersiz otobusId sayısını kullan.",
     inputSchema: { hatNo: z.number().int().positive().describe("ESHOT hat numarası, ör. 35") },
   },
   async ({ hatNo }) => {
@@ -49,10 +50,11 @@ server.registerTool(
         enlem: Number(o.KoorX.replace(",", ".")),
         boylam: Number(o.KoorY.replace(",", ".")),
       }));
+      const benzersiz = new Set(otobusler.map((o) => o.otobusId)).size;
       const ozet =
         otobusler.length === 0
           ? `${hatNo} numaralı hatta şu an seferde otobüs yok.`
-          : `${hatNo} numaralı hatta şu an ${otobusler.length} otobüs var.`;
+          : `${hatNo} numaralı hatta şu an ${otobusler.length} konum kaydı var, bunlar ${benzersiz} farklı otobüse ait.`;
       return { content: [{ type: "text", text: `${ozet}\n${JSON.stringify(otobusler, null, 2)}` }] };
     } catch (err) {
       return {
