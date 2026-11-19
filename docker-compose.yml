@@ -1,0 +1,19 @@
+# Uzak sürüm + Redis önbellek. Kullanım:
+#   cp .env.example .env   (MCP_API_KEY'i doldurun)
+#   docker compose up -d --build
+services:
+  mcp:
+    build: .
+    ports:
+      - "3000:3000"
+    env_file: .env
+    environment:
+      REDIS_URL: redis://redis:6379
+    depends_on:
+      - redis
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--maxmemory", "64mb", "--maxmemory-policy", "allkeys-lru"]
+    restart: unless-stopped

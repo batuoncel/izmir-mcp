@@ -1,0 +1,25 @@
+# Render Blueprint: uzak MCP sunucusu + Redis önbellek.
+# Kullanım: Render panelinde New → Blueprint → bu repoyu seçin. Ayrıntı: README "Canlı yayına alma".
+services:
+  - type: web
+    name: izmir-acik-veri-mcp
+    runtime: docker
+    plan: free
+    region: frankfurt
+    healthCheckPath: /saglik
+    envVars:
+      # Render rastgele bir anahtar üretir; panelde Environment sekmesinden kopyalanır.
+      - key: MCP_API_KEY
+        generateValue: true
+      - key: REDIS_URL
+        fromService:
+          type: keyvalue
+          name: izmir-acik-veri-redis
+          property: connectionString
+
+  - type: keyvalue
+    name: izmir-acik-veri-redis
+    plan: free
+    region: frankfurt
+    maxmemoryPolicy: allkeys-lru
+    ipAllowList: [] # sadece Render içinden erişilebilir

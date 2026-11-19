@@ -1,0 +1,459 @@
+{
+ "uretildi": "2026-11-19",
+ "metro": [
+  {
+   "id": 12,
+   "ad": "Evka - 3",
+   "enlem": 38.4656,
+   "boylam": 27.2289
+  },
+  {
+   "id": 11,
+   "ad": "Ege Üniversitesi",
+   "enlem": 38.46,
+   "boylam": 27.2283
+  },
+  {
+   "id": 10,
+   "ad": "Bornova",
+   "enlem": 38.4586,
+   "boylam": 27.2128
+  },
+  {
+   "id": 9,
+   "ad": "Bölge",
+   "enlem": 38.4547,
+   "boylam": 27.2008
+  },
+  {
+   "id": 8,
+   "ad": "Sanayi",
+   "enlem": 38.4481,
+   "boylam": 27.19
+  },
+  {
+   "id": 7,
+   "ad": "Stadyum",
+   "enlem": 38.4425,
+   "boylam": 27.1808
+  },
+  {
+   "id": 6,
+   "ad": "Halkapınar",
+   "enlem": 38.435,
+   "boylam": 27.1686
+  },
+  {
+   "id": 5,
+   "ad": "Hilal",
+   "enlem": 38.4275,
+   "boylam": 27.1564
+  },
+  {
+   "id": 4,
+   "ad": "Basmane",
+   "enlem": 38.4227,
+   "boylam": 27.1441
+  },
+  {
+   "id": 3,
+   "ad": "Çankaya",
+   "enlem": 38.4225,
+   "boylam": 27.1369
+  },
+  {
+   "id": 2,
+   "ad": "Konak",
+   "enlem": 38.4175,
+   "boylam": 27.1283
+  },
+  {
+   "id": 1,
+   "ad": "Üçyol",
+   "enlem": 38.406182,
+   "boylam": 27.120883
+  },
+  {
+   "id": 13,
+   "ad": "İzmirspor",
+   "enlem": 38.4017,
+   "boylam": 27.1103
+  },
+  {
+   "id": 14,
+   "ad": "Hatay",
+   "enlem": 38.4015,
+   "boylam": 27.1031
+  },
+  {
+   "id": 15,
+   "ad": "Göztepe",
+   "enlem": 38.3965,
+   "boylam": 27.0943
+  },
+  {
+   "id": 16,
+   "ad": "Poligon",
+   "enlem": 38.3916,
+   "boylam": 27.0841
+  },
+  {
+   "id": 17,
+   "ad": "Fahrettin Altay",
+   "enlem": 38.3953,
+   "boylam": 27.0698
+  },
+  {
+   "id": 18,
+   "ad": "Balçova",
+   "enlem": 38.3957,
+   "boylam": 27.057
+  },
+  {
+   "id": 19,
+   "ad": "Çağdaş",
+   "enlem": 38.3944,
+   "boylam": 27.0456
+  },
+  {
+   "id": 20,
+   "ad": "Dokuz Eylül Üniversitesi Hastanesi",
+   "enlem": 38.3942,
+   "boylam": 27.0378
+  },
+  {
+   "id": 21,
+   "ad": "Güzel Sanatlar",
+   "enlem": 38.3924,
+   "boylam": 27.0234
+  },
+  {
+   "id": 22,
+   "ad": "Narlıdere İtfaiye",
+   "enlem": 38.3937,
+   "boylam": 27.015
+  },
+  {
+   "id": 23,
+   "ad": "100. Yıl Cumhuriyet Şehitlik",
+   "enlem": 38.3957,
+   "boylam": 27.0003
+  },
+  {
+   "id": 24,
+   "ad": "Kaymakamlık",
+   "enlem": 38.3949,
+   "boylam": 26.991
+  }
+ ],
+ "izban": [
+  {
+   "id": 1,
+   "ad": "Aliağa",
+   "enlem": 38.7889,
+   "boylam": 26.9669
+  },
+  {
+   "id": 2,
+   "ad": "Biçerova",
+   "enlem": 38.7497,
+   "boylam": 26.9603
+  },
+  {
+   "id": 3,
+   "ad": "Hatundere",
+   "enlem": 38.69,
+   "boylam": 27.0175
+  },
+  {
+   "id": 4,
+   "ad": "Menemen",
+   "enlem": 38.6033,
+   "boylam": 27.0767
+  },
+  {
+   "id": 5,
+   "ad": "Egekent 2",
+   "enlem": 38.5606,
+   "boylam": 27.0444
+  },
+  {
+   "id": 6,
+   "ad": "Ulukent",
+   "enlem": 38.5486,
+   "boylam": 27.0361
+  },
+  {
+   "id": 7,
+   "ad": "Egekent",
+   "enlem": 38.5072,
+   "boylam": 27.0461
+  },
+  {
+   "id": 8,
+   "ad": "Atasanayi",
+   "enlem": 38.4989,
+   "boylam": 27.0533
+  },
+  {
+   "id": 9,
+   "ad": "Çiğli",
+   "enlem": 38.4919,
+   "boylam": 27.0631
+  },
+  {
+   "id": 10,
+   "ad": "Mavişehir",
+   "enlem": 38.4806,
+   "boylam": 27.0844
+  },
+  {
+   "id": 11,
+   "ad": "Şemikler",
+   "enlem": 38.4742,
+   "boylam": 27.0906
+  },
+  {
+   "id": 13,
+   "ad": "Demirköprü",
+   "enlem": 38.4678,
+   "boylam": 27.0967
+  },
+  {
+   "id": 14,
+   "ad": "Nergiz",
+   "enlem": 38.4592,
+   "boylam": 27.1053
+  },
+  {
+   "id": 15,
+   "ad": "Karşıyaka",
+   "enlem": 38.4578,
+   "boylam": 27.1144
+  },
+  {
+   "id": 16,
+   "ad": "Alaybey",
+   "enlem": 38.4608,
+   "boylam": 27.1217
+  },
+  {
+   "id": 17,
+   "ad": "Naldöken",
+   "enlem": 38.4647,
+   "boylam": 27.1283
+  },
+  {
+   "id": 18,
+   "ad": "Turan",
+   "enlem": 38.4669,
+   "boylam": 27.1497
+  },
+  {
+   "id": 19,
+   "ad": "Bayraklı",
+   "enlem": 38.4639,
+   "boylam": 27.1644
+  },
+  {
+   "id": 20,
+   "ad": "Salhane",
+   "enlem": 38.4508,
+   "boylam": 27.1722
+  },
+  {
+   "id": 21,
+   "ad": "Halkapınar",
+   "enlem": 38.4348,
+   "boylam": 27.1686
+  },
+  {
+   "id": 34,
+   "ad": "Alsancak",
+   "enlem": 38.4395,
+   "boylam": 27.1479
+  },
+  {
+   "id": 35,
+   "ad": "Hilal",
+   "enlem": 38.4255,
+   "boylam": 27.1544
+  },
+  {
+   "id": 23,
+   "ad": "Kemer",
+   "enlem": 38.4222,
+   "boylam": 27.1558
+  },
+  {
+   "id": 24,
+   "ad": "Şirinyer",
+   "enlem": 38.3933,
+   "boylam": 27.1469
+  },
+  {
+   "id": 25,
+   "ad": "Koşu",
+   "enlem": 38.3842,
+   "boylam": 27.1475
+  },
+  {
+   "id": 26,
+   "ad": "İnkılap",
+   "enlem": 38.3689,
+   "boylam": 27.1417
+  },
+  {
+   "id": 27,
+   "ad": "Semt Garajı",
+   "enlem": 38.3569,
+   "boylam": 27.1367
+  },
+  {
+   "id": 28,
+   "ad": "Esbaş",
+   "enlem": 38.3361,
+   "boylam": 27.1367
+  },
+  {
+   "id": 29,
+   "ad": "Gaziemir",
+   "enlem": 38.3264,
+   "boylam": 27.14
+  },
+  {
+   "id": 30,
+   "ad": "Sarnıç",
+   "enlem": 38.3119,
+   "boylam": 27.1447
+  },
+  {
+   "id": 31,
+   "ad": "Adnan Menderes Havalimanı",
+   "enlem": 38.2911,
+   "boylam": 27.1481
+  },
+  {
+   "id": 32,
+   "ad": "Cumaovası",
+   "enlem": 38.2625,
+   "boylam": 27.1631
+  },
+  {
+   "id": 38,
+   "ad": "Develi",
+   "enlem": 38.2031,
+   "boylam": 27.1681
+  },
+  {
+   "id": 40,
+   "ad": "Tekeli",
+   "enlem": 38.1811,
+   "boylam": 27.1856
+  },
+  {
+   "id": 42,
+   "ad": "Pancar",
+   "enlem": 38.1975,
+   "boylam": 27.2397
+  },
+  {
+   "id": 43,
+   "ad": "Kuşçuburun",
+   "enlem": 38.2094,
+   "boylam": 27.3089
+  },
+  {
+   "id": 44,
+   "ad": "Torbalı",
+   "enlem": 38.1697,
+   "boylam": 27.3472
+  },
+  {
+   "id": 45,
+   "ad": "Tepeköy",
+   "enlem": 38.1472,
+   "boylam": 27.3613
+  },
+  {
+   "id": 47,
+   "ad": "Sağlık",
+   "enlem": 38.0846,
+   "boylam": 27.4008
+  },
+  {
+   "id": 50,
+   "ad": "Belevi",
+   "enlem": 38.0306,
+   "boylam": 27.4331
+  },
+  {
+   "id": 48,
+   "ad": "Selçuk",
+   "enlem": 37.9509,
+   "boylam": 27.3731
+  }
+ ],
+ "metroSefer": [
+  {
+   "TarifeId": 1,
+   "BaslangicSaati": "06:00:00",
+   "BitisSaati": "06:30:00",
+   "Aralik": 7.5
+  },
+  {
+   "TarifeId": 1,
+   "BaslangicSaati": "06:30:00",
+   "BitisSaati": "09:00:00",
+   "Aralik": 4
+  },
+  {
+   "TarifeId": 1,
+   "BaslangicSaati": "09:00:00",
+   "BitisSaati": "16:00:00",
+   "Aralik": 5
+  },
+  {
+   "TarifeId": 1,
+   "BaslangicSaati": "16:00:00",
+   "BitisSaati": "20:00:00",
+   "Aralik": 4
+  },
+  {
+   "TarifeId": 1,
+   "BaslangicSaati": "20:00:00",
+   "BitisSaati": "00:20:00",
+   "Aralik": 10
+  },
+  {
+   "TarifeId": 2,
+   "BaslangicSaati": "06:00:00",
+   "BitisSaati": "06:30:00",
+   "Aralik": 7.5
+  },
+  {
+   "TarifeId": 2,
+   "BaslangicSaati": "06:30:00",
+   "BitisSaati": "20:00:00",
+   "Aralik": 5
+  },
+  {
+   "TarifeId": 2,
+   "BaslangicSaati": "20:00:00",
+   "BitisSaati": "00:20:00",
+   "Aralik": 10
+  },
+  {
+   "TarifeId": 3,
+   "BaslangicSaati": "06:00:00",
+   "BitisSaati": "20:00:00",
+   "Aralik": 7.5
+  },
+  {
+   "TarifeId": 3,
+   "BaslangicSaati": "20:00:00",
+   "BitisSaati": "00:20:00",
+   "Aralik": 10
+  }
+ ]
+}
